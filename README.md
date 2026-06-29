@@ -1,34 +1,26 @@
-# TarkovDiscordBot
+# SARFTarkovRadar
 
-An advanced companion intelligence utility built for Discord. It seamlessly queries flea market matrices, item mechanics, loadout randomizers, and hideout logic frameworks directly into your server.
-
----
-
-## Getting Started
-
-You can either invite the pre-made bot directly to your server or host your own custom instance using the source code.
-
-### Option A: Direct Invite (Easiest)
-If you don't want to host the bot yourself, you can instantly add the pre-configured instance to your Discord server using the link below:
-
-**[Invite TarkovDiscordBot to your Server](https://discord.com/oauth2/authorize?client_id=1520545719360950302)**
+A custom companion bot built for Discord that queries flea market prices, item stats, ballistics records, and map data directly into your server.
 
 ---
 
-### Option B: Self-Hosting & Custom Bot Setup
+## Getting Started and Configuration
 
-If you prefer to host the bot locally or on a server, follow this seamless setup guide.
+To run this bot, you must host your own instance using the source code below. Because the bot relies on specific automated tracking functions, it requires your individual server channel configurations to run properly.
 
-#### 1. Create a Discord Application
-To run your own instance, you need to register a bot application:
+### 1. Create a Discord Application
+To register your own instance of the bot:
 1. Go to the Discord Developer Portal (https://discord.com/developers/applications).
 2. Click "New Application" in the top right and give it a name.
 3. Navigate to the "Bot" tab on the left menu, click "Add Bot", and confirm.
 4. Under the "Token" section, click "Reset Token" and copy the secret string. (Keep this private!)
 5. Scroll down to "Privileged Gateway Intents" and enable "Message Content Intent" so the bot can read commands like `!random`.
 
-#### 2. Clone the Repository
+### 2. Clone the Repository
 Open your terminal/command prompt and run:
 ```bash
 git clone [https://github.com/tannbant/TarkovDiscordBot.git](https://github.com/tannbant/TarkovDiscordBot.git)
 cd TarkovDiscordBot
+
+Then setup the .env with the discord bot token in the developer app of discord. After go to the text channel where bot will send, then right click the channel and copy the ID. 
+
