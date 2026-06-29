@@ -1,0 +1,11 @@
+# Sensitive environment configurations
+.env
+
+# Python compilation files
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+env/
